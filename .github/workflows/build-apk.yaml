@@ -33,7 +33,7 @@ jobs:
       - name: Build APK
         working-directory: ./workspace
         run: |
-          cd android && ./gradlew assembleRelease
+          cd android && gradle assembleRelease
 
       - name: Upload the APK artifact with 1 day retention
         uses: actions/upload-artifact@v3
